@@ -1,7 +1,9 @@
+import { Global } from "@emotion/react";
 import { AppType } from "next/dist/next-server/lib/utils";
 import Head from "next/head";
 import "normalize.css/normalize.css";
 import React from "react";
+import { globalStyles } from "../lib/styles/globalStyles";
 
 const favicons = (
   <>
@@ -57,10 +59,12 @@ const MyApp: AppType = ({ Component, pageProps }) => {
         {favicons}
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Nunito:wght@100;200;300;400;500;600;700;800;900&display=swap"
           rel="stylesheet"
         />
+        <title>Koroswap</title>
       </Head>
+      <Global styles={globalStyles} />
       <Component {...pageProps} />
     </>
   );
