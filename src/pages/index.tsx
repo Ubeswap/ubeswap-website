@@ -35,7 +35,7 @@ const IndexPage = () => {
             <br />
             and automated liquidity provision on Celo.
           </p>
-          <a href="https://twitter.com/koroswap" target="_blank">
+          <a href="https://twitter.com/ubeswap" target="_blank">
             <Button variant="pink">Subscribe to updates</Button>
           </a>
         </HeroBody>

@@ -1,3 +1,3 @@
-# koroswap-website
+# ubeswap-website
 
 Website of Koroswap.
