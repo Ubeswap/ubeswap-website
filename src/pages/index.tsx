@@ -31,7 +31,7 @@ const IndexPage = () => {
             on Celo
           </h1>
           <p>
-            Koroswap is a protocol for decentralized exchange
+            Ubeswap is a protocol for decentralized exchange
             <br />
             and automated liquidity provision on Celo.
           </p>

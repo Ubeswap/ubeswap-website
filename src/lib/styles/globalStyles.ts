@@ -7,7 +7,7 @@ export const globalStyles = css`
 
   body {
     font-family: Nunito, sans-serif;
-    background-color: rgb(6, 6, 27);
+    background-color: rgb(136, 120, 195);
     color: #fff;
   }
 `;
