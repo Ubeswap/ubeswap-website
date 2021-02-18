@@ -12,7 +12,7 @@ const IndexPage = () => {
   return (
     <MainLayout>
       <Head>
-        <title>Ubeswap | Celo DeFi Exchange</title>
+        <title>Ubeswap | Celo DEX</title>
       </Head>
       <HeroBody>
         <h1>{TITLE}</h1>
