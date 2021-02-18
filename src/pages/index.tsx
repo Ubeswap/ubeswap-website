@@ -1,86 +1,104 @@
-import { css } from "@emotion/react";
 import styled from "@emotion/styled";
+import Head from "next/head";
+import Image from "next/image";
 import React from "react";
 import { Button } from "~src/components/Button";
-import { LogoWithText } from "~src/components/Logo/LogoWithText";
+import { MainLayout } from "~src/components/layouts/MainLayout";
+
+const TITLE = <>Powering DeFi on&nbsp;Celo</>;
+const SLOGAN = "Ubeswap is a mobile-first DeFi exchange.";
 
 const IndexPage = () => {
   return (
-    <Wrapper>
-      <Hero>
-        <Header>
-          <LogoWithText />
-          <Button
-            css={css`
-              cursor: not-allowed;
-            `}
-            variant="green"
-            onClick={() => {
-              alert("Coming soon!");
-            }}
-          >
-            Launch App
-          </Button>
-        </Header>
-        <HeroBody>
-          <h1>
-            The exchange
-            <br />
-            for DeFi
-            <br />
-            on Celo
-          </h1>
-          <p>
-            Ubeswap is a protocol for decentralized exchange
-            <br />
-            and automated liquidity provision on Celo.
-          </p>
-          <a href="https://twitter.com/ubeswap" target="_blank">
-            <Button variant="pink">Subscribe to updates</Button>
-          </a>
-        </HeroBody>
-      </Hero>
-    </Wrapper>
+    <MainLayout>
+      <Head>
+        <title>Ubeswap | Celo DeFi Exchange</title>
+      </Head>
+      <HeroBody>
+        <h1>{TITLE}</h1>
+        <p>{SLOGAN}</p>
+        <a
+          href="https://docs.ubeswap.org/faq"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Button variant="ube">Learn more</Button>
+        </a>
+      </HeroBody>
+      <MockupWrapper>
+        <Mockup>
+          <MockupBg />
+          <Image src="/wallet-preview@1000w.png" width={1000} height={990} />
+        </Mockup>
+      </MockupWrapper>
+    </MainLayout>
   );
 };
 
-const Header = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+const MockupBg = styled.div`
+  position: absolute;
+  left: -64%;
+  top: -20%;
+  width: 228%;
+  height: 140%;
 
-  padding: 20px 0;
-  svg {
-    height: 40px;
-    width: 196px;
-  }
+  background: radial-gradient(
+    49.73% 49.85% at 50.53% 49.91%,
+    #8878c3 0%,
+    #bbaeeb 21%,
+    #571843 67%,
+    #000000 100%
+  );
+  background-blend-mode: color-dodge;
+  mix-blend-mode: color-dodge;
+  opacity: 0.5;
 `;
 
-const Hero = styled.div`
+const MockupWrapper = styled.div`
+  position: absolute;
   width: 100%;
-  height: 100vh;
-  background: linear-gradient(rgb(8, 2, 30) 0%, rgb(18, 4, 70) 146.21%);
-  padding: 0 30px;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: end;
+  justify-content: center;
+`;
+
+const Mockup = styled.div`
+  position: relative;
+  padding: 0 20px;
+  img {
+    max-height: 50vh;
+  }
+  margin: 0px auto;
 `;
 
 const HeroBody = styled.div`
+  text-align: center;
   margin-top: 120px;
+  @media only screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+
   h1 {
-    font-weight: 300;
-    font-size: 70px;
-    line-height: 84px;
+    color: #ffffff;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 39px;
   }
   p {
+    font-size: 24px;
+    line-height: 26px;
+    color: #e0e0e0;
     font-weight: 200;
     color: rgba(255, 255, 255, 0.75);
     font-size: 22px;
     line-height: 32px;
 
-    margin-top: 40px;
     margin-bottom: 40px;
   }
 `;
-
-const Wrapper = styled.div``;
 
 export default IndexPage;
