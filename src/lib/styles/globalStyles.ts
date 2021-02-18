@@ -6,8 +6,8 @@ export const globalStyles = css`
   }
 
   body {
-    font-family: Nunito, sans-serif;
-    background-color: rgb(136, 120, 195);
+    font-family: Archivo, sans-serif;
+    background: #2e3338;
     color: #fff;
   }
 `;
