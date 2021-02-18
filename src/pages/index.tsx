@@ -1,33 +1,25 @@
 import styled from "@emotion/styled";
+import Head from "next/head";
 import React from "react";
 import { Button } from "~src/components/Button";
-import { LogoWithText } from "~src/components/Logo/LogoWithText";
+import { MainLayout } from "~src/components/layouts/MainLayout";
 
-const TITLE = "Powering DeFi on Celo";
+const TITLE = <>Powering DeFi on&nbsp;Celo</>;
 const SLOGAN = "Ubeswap is a mobile-first DeFi exchange.";
 
 const IndexPage = () => {
   return (
-    <Wrapper>
-      <Hero>
-        <Header>
-          <LogoWithText />
-          <a
-            href="https://app-alfajores.ubeswap.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button variant="ube">Launch App</Button>
-          </a>
-        </Header>
-        <HeroBody>
-          <h1>{TITLE}</h1>
-          <p>{SLOGAN}</p>
-          <Button variant="ube">Learn more</Button>
-        </HeroBody>
-      </Hero>
-      <Mockup></Mockup>
-    </Wrapper>
+    <MainLayout>
+      <Head>
+        <title>Ubeswap | Celo DeFi Exchange</title>
+      </Head>
+      <HeroBody>
+        <h1>{TITLE}</h1>
+        <p>{SLOGAN}</p>
+        <Button variant="ube">Learn more</Button>
+      </HeroBody>
+      <Mockup />
+    </MainLayout>
   );
 };
 
@@ -42,23 +34,6 @@ const Mockup = styled.div`
   background-blend-mode: color-dodge;
   mix-blend-mode: color-dodge;
   opacity: 0.5;
-`;
-
-const Header = styled.div`
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  svg {
-    margin-right: 20px;
-    height: 40px;
-    width: 196px;
-  }
-`;
-
-const Hero = styled.div`
-  width: 100%;
-  height: 100vh;
 `;
 
 const HeroBody = styled.div`
@@ -82,12 +57,6 @@ const HeroBody = styled.div`
 
     margin-bottom: 40px;
   }
-`;
-
-const Wrapper = styled.div`
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: min(3%, 46px) 3% 0;
 `;
 
 export default IndexPage;
