@@ -69,9 +69,10 @@ const Mockup = styled.div`
   position: relative;
   padding: 0 20px;
   img {
-    max-height: 50vh;
+    max-height: 45vh;
   }
   margin: 0px auto;
+  pointer-events: none;
 `;
 
 const HeroBody = styled.div`
