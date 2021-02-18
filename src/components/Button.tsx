@@ -17,7 +17,6 @@ export const Button: React.FC<IProps> = (props) => {
 };
 
 const StyledButton = styled.button<IProps>`
-  transform: scale(0.98);
   border: none;
   border-radius: 3px;
   padding: 14px 22px;
@@ -35,6 +34,6 @@ const StyledButton = styled.button<IProps>`
       color: #fff;
     `};
   :hover {
-    transform: scale(1);
+    background-color: #bbaeeb;
   }
 `;

@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 import Head from "next/head";
+import Image from "next/image";
 import React from "react";
 import { Button } from "~src/components/Button";
 import { MainLayout } from "~src/components/layouts/MainLayout";
@@ -18,12 +19,23 @@ const IndexPage = () => {
         <p>{SLOGAN}</p>
         <Button variant="ube">Learn more</Button>
       </HeroBody>
-      <Mockup />
+      <MockupWrapper>
+        <Mockup>
+          <MockupBg />
+          <Image src="/wallet-preview@1000w.png" width={1000} height={990} />
+        </Mockup>
+      </MockupWrapper>
     </MainLayout>
   );
 };
 
-const Mockup = styled.div`
+const MockupBg = styled.div`
+  position: absolute;
+  left: -64%;
+  top: -20%;
+  width: 228%;
+  height: 140%;
+
   background: radial-gradient(
     49.73% 49.85% at 50.53% 49.91%,
     #8878c3 0%,
@@ -36,9 +48,33 @@ const Mockup = styled.div`
   opacity: 0.5;
 `;
 
+const MockupWrapper = styled.div`
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+
+  display: flex;
+  align-items: end;
+  justify-content: center;
+`;
+
+const Mockup = styled.div`
+  position: relative;
+  padding: 0 20px;
+  img {
+    max-height: 50vh;
+  }
+  margin: 0px auto;
+`;
+
 const HeroBody = styled.div`
   text-align: center;
   margin-top: 120px;
+  @media only screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
+
   h1 {
     color: #ffffff;
     font-style: normal;
