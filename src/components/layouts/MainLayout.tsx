@@ -35,20 +35,13 @@ export const MainLayout: React.FC<PropsWithChildren<unknown>> = ({
           >
             <FaDiscord />
           </a>
-          {/* <a
+          <a
             href="https://app-alfajores.ubeswap.org"
             target="_blank"
             rel="noopener noreferrer"
-          > */}
-          <Button
-            variant="ube"
-            onClick={() => {
-              alert("Coming soon!");
-            }}
           >
-            Launch App
-          </Button>
-          {/* </a> */}
+            <Button variant="ube">Launch Testnet</Button>
+          </a>
         </Navbar>
       </Header>
       {children}
