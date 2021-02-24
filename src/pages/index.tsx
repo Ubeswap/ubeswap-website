@@ -55,7 +55,7 @@ const MockupBg = styled.div`
 `;
 
 const MockupWrapper = styled.div`
-  position: absolute;
+  margin-top: 16px;
   width: 100%;
   left: 0;
   bottom: 0;
