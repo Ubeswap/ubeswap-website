@@ -12,6 +12,23 @@ const IndexPage = () => {
   return (
     <MainLayout>
       <Head>
+        <meta name="og:title" content="Ubeswap" />
+        <meta name="og:url" content="https://ubeswap.org" />
+        <meta name="og:image" content="https://ubeswap.org/og-image.png" />
+        <meta name="og:site_name" content="Ubeswap" />
+        <meta
+          name="description"
+          content="Ubeswap is a decentralized exchange and automated market maker protocol for Celo assets."
+        />
+        <meta
+          name="og:description"
+          content="Ubeswap is a decentralized exchange and automated market maker protocol for Celo assets."
+        />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@ubeswap" />
+        <meta name="twitter:creator" content="@ubeswap" />
+
         <title>Ubeswap | Celo DEX</title>
       </Head>
       <HeroBody>
