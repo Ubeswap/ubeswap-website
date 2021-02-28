@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import React, { PropsWithChildren } from "react";
-import { FaDiscord, FaTwitter } from "react-icons/fa";
+import { FaDiscord, FaMedium, FaTwitter } from "react-icons/fa";
 import { Button } from "~src/components/Button";
 import { LogoWithText } from "~src/components/Logo/LogoWithText";
 
@@ -20,6 +20,13 @@ export const MainLayout: React.FC<PropsWithChildren<unknown>> = ({
             rel="noopener noreferrer"
           >
             FAQ
+          </a>
+          <a
+            href="https://medium.com/ubeswap"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaMedium />
           </a>
           <a
             href="https://twitter.com/ubeswap"
