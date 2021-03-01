@@ -43,11 +43,11 @@ export const MainLayout: React.FC<PropsWithChildren<unknown>> = ({
             <FaDiscord />
           </a>
           <a
-            href="https://app-alfajores.ubeswap.org"
+            href="https://app.ubeswap.org"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button variant="ube">Launch Testnet</Button>
+            <Button variant="ube">Launch App</Button>
           </a>
         </Navbar>
       </Header>
