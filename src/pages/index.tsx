@@ -35,11 +35,11 @@ const IndexPage = () => {
         <h1>{TITLE}</h1>
         <p>{SLOGAN}</p>
         <a
-          href="https://docs.ubeswap.org/faq"
+          href="https://app.ubeswap.org"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Button variant="ube">Learn more</Button>
+          <Button variant="ube">Launch app</Button>
         </a>
       </HeroBody>
       <MockupWrapper>

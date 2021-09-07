@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import React, { PropsWithChildren } from "react";
-import { FaDiscord, FaMedium, FaTwitter } from "react-icons/fa";
+import { FaDiscord, FaMedium, FaTwitter, FaTelegram } from "react-icons/fa";
 import { Button } from "~src/components/Button";
 import { LogoWithText } from "~src/components/Logo/LogoWithText";
 
@@ -15,11 +15,11 @@ export const MainLayout: React.FC<PropsWithChildren<unknown>> = ({
         </LogoWrapper>
         <Navbar>
           <a
-            href="https://docs.ubeswap.org/faq"
+            href="https://docs.ubeswap.org"
             target="_blank"
             rel="noopener noreferrer"
           >
-            FAQ
+            Docs
           </a>
           <a
             href="https://medium.com/ubeswap"
@@ -41,6 +41,13 @@ export const MainLayout: React.FC<PropsWithChildren<unknown>> = ({
             rel="noopener noreferrer"
           >
             <FaDiscord />
+          </a>
+          <a
+            href="https://t.me/ubeswapofficial"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaTelegram />
           </a>
           <a
             href="https://app.ubeswap.org"
