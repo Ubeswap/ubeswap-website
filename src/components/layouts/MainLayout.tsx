@@ -54,7 +54,7 @@ export const MainLayout: React.FC<PropsWithChildren<unknown>> = ({
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button variant="ube">Launch App</Button>
+            <Button variant="ube">Launch app</Button>
           </a>
         </Navbar>
       </Header>
