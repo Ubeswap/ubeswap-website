@@ -113,6 +113,4 @@ const Wrapper = styled.div`
   margin: 0 auto;
   padding: min(3%, 46px) 3% 0;
   height: 100vh;
-  max-height: 100vh;
-  overflow: hidden;
 `;
