@@ -33,10 +33,8 @@ const IndexPage = () => {
       </Head>
       <div
         css={{
-          display: "flex",
-          justifyContent: "space-between",
+          textAlign: "center",
           marginTop: "24px",
-          flexWrap: "wrap",
         }}
       >
         <HeroBody>
@@ -99,7 +97,6 @@ const Mockup = styled.div`
 `;
 
 const HeroBody = styled.div`
-  text-align: left;
   margin-top: 120px;
   @media only screen and (max-width: 767px) {
     margin-top: 60px;
@@ -110,7 +107,7 @@ const HeroBody = styled.div`
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
-    line-height: 39px;
+    line-height: 36px;
   }
   p {
     font-size: 24px;
@@ -119,9 +116,7 @@ const HeroBody = styled.div`
     font-weight: 200;
     color: rgba(255, 255, 255, 0.75);
     font-size: 22px;
-    line-height: 32px;
-
-    margin-bottom: 40px;
+    line-height: 20px;
   }
 `;
 
