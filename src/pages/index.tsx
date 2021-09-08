@@ -31,23 +31,29 @@ const IndexPage = () => {
 
         <title>Ubeswap | Celo DEX</title>
       </Head>
-      <HeroBody>
-        <h1>{TITLE}</h1>
-        <p>{SLOGAN}</p>
-        <a
-          href="https://app.ubeswap.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Button variant="ube">Launch app</Button>
-        </a>
-      </HeroBody>
-      <MockupWrapper>
-        <Mockup>
-          <MockupBg />
-          <Image src="/wallet-preview@1000w.png" width={1000} height={990} />
-        </Mockup>
-      </MockupWrapper>
+      <div
+        css={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginTop: "24px",
+          flexWrap: "wrap",
+        }}
+      >
+        <HeroBody>
+          <h1>{TITLE}</h1>
+          <p>{SLOGAN}</p>
+          <a
+            href="https://app.ubeswap.org"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="ube">Launch app</Button>
+          </a>
+        </HeroBody>
+        <div css={{ marginTop: "60px" }}>
+          <Image src="/wallet-preview@1000w.png" width={500} height={445} />
+        </div>
+      </div>
     </MainLayout>
   );
 };
@@ -93,7 +99,7 @@ const Mockup = styled.div`
 `;
 
 const HeroBody = styled.div`
-  text-align: center;
+  text-align: left;
   margin-top: 120px;
   @media only screen and (max-width: 767px) {
     margin-top: 60px;
