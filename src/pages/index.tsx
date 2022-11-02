@@ -49,17 +49,7 @@ const IndexPage = () => {
           </a>
         </HeroBody>
         <div css={{ marginTop: "60px" }}>
-          {/* <Image src="/wallet-preview@1000w.png" width={500} height={445} /> */}
-          <iframe
-            src="https://app.awardpool.com/0x/ubeswap"
-            name="awardpool_embed"
-            id="awardpool_embed"
-            scrolling="yes"
-            allowFullScreen
-            loading="lazy"
-            allow="clipboard-read; clipboard-write"
-            className="awardpool_embed"
-          />
+          <Image src="/wallet-preview@1000w.png" width={500} height={445} />
         </div>
       </div>
     </MainLayout>
