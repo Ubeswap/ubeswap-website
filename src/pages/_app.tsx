@@ -1,9 +1,9 @@
 import { Global } from "@emotion/react";
-import { AppType } from "next/dist/next-server/lib/utils";
 import Head from "next/head";
 import "normalize.css/normalize.css";
 import React from "react";
 import { globalStyles } from "../lib/styles/globalStyles";
+import { AppType } from "next/app";
 
 const favicons = (
   <>
